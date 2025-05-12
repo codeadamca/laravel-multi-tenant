@@ -6,7 +6,7 @@ A basic example of app multi-tenancy using Laravel and Spatie Laravel Multitenan
 
 ## Project Stack
 
-This project uses vanilla [PHP](https://php.net).
+This project uses [PHP](https://php.net) and [Laravel](https://laravel.com/).
 
 <img src="https://console.codeadam.ca/api/image/php" width="60"> <img src="https://console.codeadam.ca/api/image/laravel" width="60"> 
 
