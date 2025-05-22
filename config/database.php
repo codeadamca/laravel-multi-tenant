@@ -16,6 +16,7 @@ return [
     |
     */
 
+    // 'default' => 'tenant',
     'default' => env('DB_CONNECTION', 'sqlite'),
 
     /*
@@ -31,6 +32,7 @@ return [
 
     'connections' => [
 
+        /*
         'sqlite' => [
             'driver' => 'sqlite',
             'url' => env('DB_URL'),
@@ -111,7 +113,8 @@ return [
             // 'encrypt' => env('DB_ENCRYPT', 'yes'),
             // 'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'false'),
         ],
-
+        */
+        
         'tenant' => [
             'driver' => 'mysql',
             'database' => null,
