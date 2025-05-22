@@ -4,9 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Models\News;
+
 class NewsController extends Controller
 {
     
+    // use UsesTenantConnection;
+
     /**
      * Show the profile for a given user.
      */
@@ -16,6 +20,5 @@ class NewsController extends Controller
             'news' => News::all(),
         ]);
     }
-    
 
 }
