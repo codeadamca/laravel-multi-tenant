@@ -2,6 +2,14 @@
 
 A basic example of app multi-tenancy using Laravel and Spatie Laravel Multitenancy.
 
+1. Install the Spatie Multitenancy package:
+
+    ```
+    composer require "spatie/laravel-multitenancy:^4.0"
+    ```
+    
+2. 
+
 ---
 
 ## Project Stack
