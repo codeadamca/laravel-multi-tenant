@@ -6,9 +6,9 @@ use Illuminate\Http\Request;
 use Illuminate\View\View;
 // use Illuminate\Support\Facades\DB;
 
-use App\Models\News;
+use App\Models\Articles;
 
-class NewsController extends Controller
+class ArticlesController extends Controller
 {
 
     /**
@@ -19,8 +19,8 @@ class NewsController extends Controller
 
         // dd(DB::connection()->getDatabaseName());
 
-        return view('news', [
-            'news' => News::all(),
+        return view('articles', [
+            'articles' => Articles::all(),
         ]);
     }
 
