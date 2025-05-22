@@ -11,7 +11,9 @@
     <h1>Articles</h1>
 
     @foreach ($articles as $article)
-        TEST  
+        <hr>
+        <h2>{{$article->title}}</h2>
+        <p>{{nl2br($article->content)}}</p>
     @endforeach
     
 </body>

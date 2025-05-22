@@ -18,7 +18,7 @@ class ArticlesFactory extends Factory
     {
         return [
             'title' => ucwords(str_replace('.', '', fake()->sentence())),
-            'content' => fake()->paragraph(rand(2, 3)),
+            'content' => fake()->paragraph(),
         ];
     }
 }
