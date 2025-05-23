@@ -5,9 +5,6 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-use Spatie\Multitenancy\Models\Concerns\UsesTenantConnection;
-
-
 class Article extends Model
 {
     /** @use HasFactory<\Database\Factories\UserFactory> */

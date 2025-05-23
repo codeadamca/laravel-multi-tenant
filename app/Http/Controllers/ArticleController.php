@@ -8,6 +8,7 @@ use Illuminate\View\View;
 use Spatie\Multitenancy\Models\Tenant;
 
 use App\Models\Article;
+use App\Models\Admin;
 
 class ArticleController extends Controller
 {
@@ -23,6 +24,7 @@ class ArticleController extends Controller
         return view('articles', [
             'articles' => Article::all(),
             'tenants' => Tenant::all(),
+            'admins' => Admin::all(),
         ]);
     }
 
