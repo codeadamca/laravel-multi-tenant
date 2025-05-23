@@ -12,16 +12,31 @@ class DatabaseSeeder extends Seeder
     /**
      * Seed the application's database.
      */
-    public function run(): void
+    public function run()
     {
-        // User::factory(10)->create();
+        Tenant::checkCurrent()
+           ? $this->runTenantSpecificSeeders()
+           : $this->runLandlordSpecificSeeders();
+    }
 
+    public function runTenantSpecificSeeders()
+    {
+
+        die('here');
         User::factory()->create([
             'name' => 'Test User',
             'email' => 'test@example.com',
         ]);
 
         Articles::factory()->count(rand(2,5))->create();
+
+    }
+
+    public function runLandlordSpecificSeeders()
+    {
+
+        die('here2');
+    
 
     }
 }

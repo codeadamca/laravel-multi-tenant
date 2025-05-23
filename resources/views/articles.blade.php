@@ -8,13 +8,26 @@
 </head>
 <body>
 
-    <h1>Articles</h1>
+    <h1>Testing Multitenancy</h1>
+
+    <h2 style="color:red;">Articles</h2>
 
     @foreach ($articles as $article)
         <hr>
-        <h2>{{$article->title}}</h2>
+        <h3>{{$article->title}}</h3>
         <p>{{nl2br($article->content)}}</p>
     @endforeach
+
+    <hr>
+
+    <h2 style="color:red;">Tenants</h2>
+
+     @foreach ($tenants as $tenant)
+        <hr>
+        <h3>{{$tenant->name}}</h3>
+        <p><a href="http://{{$tenant->domain}}:7777/articles">{{$tenant->domain}}</a></p>
+    @endforeach
+    
     
 </body>
 </html>
