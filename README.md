@@ -22,7 +22,8 @@ This project uses [PHP](https://php.net) and [Laravel](https://laravel.com/).
 
 ## Repo Resources
 
-- [Spatie Muti-Tenancy](https://spatie.be/docs/laravel-multitenancy/v4/introduction)
+- [Spatie Muti-Tenancy Documentation](https://spatie.be/docs/laravel-multitenancy/v4/introduction)
+- [Spatie Muti-Tenancy GitHub Repo](https://github.com/spatie/laravel-multitenancy)
 
 <br>
 <a href="https://codeadam.ca">
