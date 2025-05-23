@@ -7,9 +7,9 @@ use Illuminate\View\View;
 // use Illuminate\Support\Facades\DB;
 use Spatie\Multitenancy\Models\Tenant;
 
-use App\Models\Articles;
+use App\Models\Article;
 
-class ArticlesController extends Controller
+class ArticleController extends Controller
 {
 
     /**
@@ -21,7 +21,7 @@ class ArticlesController extends Controller
         // dd(DB::connection()->getDatabaseName());
 
         return view('articles', [
-            'articles' => Articles::all(),
+            'articles' => Article::all(),
             'tenants' => Tenant::all(),
         ]);
     }

@@ -8,10 +8,10 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Spatie\Multitenancy\Models\Concerns\UsesTenantConnection;
 
 
-class Articles extends Model
+class Article extends Model
 {
     /** @use HasFactory<\Database\Factories\UserFactory> */
-    use HasFactory, UsesTenantConnection;
+    use HasFactory;
 
     /**
      * The attributes that are mass assignable.

@@ -4,6 +4,10 @@
  *
  * To run the landlord migrations:
  * php artisan migrate --path=database/migrations/landlord --database=landlord
+ * php artisan migrate:fresh --path=database/migrations/landlord --database=landlord --seed
+ * 
+ * To seed tenants:
+ * php artisan tenants:artisan "migrate:fresh --seed --database=tenant"
  * 
  */
 
